@@ -37,3 +37,12 @@ h1, h2 {
 .button:hover {
     background-color: #005f6b;
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .button {
+        font-size: 16px; /* Increase font size for better readability */
+        padding: 15px 25px; /* Increase padding for easier interaction */
+        line-height: 1.5; /* Improve line height for readability */
+    }
+}
