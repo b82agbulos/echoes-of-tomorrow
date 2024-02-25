@@ -143,13 +143,8 @@ html {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .button {
-        font-size: 18px; /* Further increase font size */
-        padding: 15px 25px; /* Adjust padding as needed */
-        line-height: 1.5; /* Ensure adequate line height for readability */
-        white-space: normal; /* Allow text to wrap */
-        text-align: center; /* Center-align the text for aesthetics */
-        display: inline-block; /* Keep display as inline-block or change as needed */
-        min-width: 100px; /* Optional: Set a minimum width */
-        box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+        font-size: 16px; /* Increase font size for better readability */
+        padding: 15px 25px; /* Increase padding for easier interaction */
+        line-height: 1.5; /* Improve line height for readability */
     }
 }
