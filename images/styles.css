@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #296D4D;
+    /* Deep, eerie green */
+    --secondary-color: #452A72;
+    /* Dark, cosmic purple */
+    --background-color: #0D0D0D;
+    /* Abyssal black */
+    --accent-color: #B6A136;
+    /* Muted ancient gold */
+    --text-color: #E5E5E5;
+    /* Ethereal white */
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    /* A more classic-looking font for Lovecraftian theme */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    /* or your preferred max width */
+    margin: 20px auto;
+    /* Adjust as needed */
+    padding: 40px;
+    border-radius: 8px;
+    /* Optional, for rounded corners */
+    background-color: rgba(13, 13, 13, 0.95);
+    /* Or any background color */
+    /* Remove any overflow: hidden; or fixed height properties */
+}
+
+
+h1,
+h2 {
+    color: var(--accent-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.chapter-image {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    /* White shadow for a ghostly effect */
+}
+
+
+:root {
+    /* Updated color variables for the cover page */
+    --text-color: #E5E5E5;
+    /* Lighter text for better readability on the cover */
+    --primary-color: #296D4D;
+    /* Deep, eerie green for buttons */
+    --background-color: #0D0D0D;
+    /* Abyssal black for background */
+}
+
+body,
+html {
+    height: auto;
+    /* Remove fixed height to allow content to determine the height */
+    overflow: auto;
+    /* Ensure default scrolling behavior */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.cover-container {
+    position: relative;
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height, only if you want to fill the screen for the cover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    /* Only if necessary for design, not recommended for content pages */
+}
+
+
+
+.cover-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100vw;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.cover-text {
+    position: relative;
+    z-index: 10;
+    /* Ensures text appears above the image */
+    color: var(--text-color);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: Adds a semi-transparent overlay for better readability */
+    border-radius: 8px;
+    /* Optional: Adds rounded corners to the text background */
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .button {
+        font-size: 16px; /* Increase font size for better readability */
+        padding: 15px 25px; /* Increase padding for easier interaction */
+        line-height: 1.5; /* Improve line height for readability */
+    }
+}
