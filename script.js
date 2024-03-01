@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add click event listener to the button
   button.addEventListener("click", () => {
     // List of pages to navigate to
-    var pages = ['castle-of-shadows.html', 'city-of-tomorrow.html'];
+    var pages = ['veil-of-shadows.html', 'from-the-nexus-to-new-horizons.html'];
 
     // Randomly choose a page
     var randomPage = pages[Math.floor(Math.random() * pages.length)];
